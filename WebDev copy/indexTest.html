@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<style>
+.button{
+	background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4x 2px;
+    -webkit-transition-duration: 0.4s;
+
+}
+.buttton1{
+	background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button1:hover{
+
+    background-color: #008CBA;
+    color: white;
+}
+table {
+
+    border-collapse: collapse;
+    margin: 100px;
+    width: 100%;
+    border: 1px solid #ddd;
+
+}
+#div1 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+#div2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+</style>
+
+</head>
+<body>
+	
+	<ul>
+		
+		<li><img src = "sprite.png" draggable ="true" ondragstart ="drag(event)" id = "drag1"></li>
+		<li><img src = "wall.jpeg" draggable ="true" ondragstart ="drag(event)" id = "drag2"></li>
+
+	</ul>
+
+
+<table id = "myTable" align= "center">
+
+</tr>
+<tr id = "clone">
+<td id = "cc">  
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+		
+</td>
+</tr>
+</table>
+<br> 
+
+<input id="inputRows" type ="text" name ="">
+<input id ="inputColumns" type ="text" name ="">
+<button class ="button button1" id = "columnButton" onclick="createColumns()"> ColumnTest</button>
+<button class ="button button1" id="okayButton" onclick="createRows()">Okay</button>
+<button class ="button button1"  onclick="myCreateFunction()"> CreateRowTest</button>
+<button class ="button button1"  onclick="removeWall()">Remove Wall</button>
+<button class ="button button1" onclick="removeSprite()">Remove Sprite</button>
+
+<script type = "text/javascript" src = "grid.js"></script>
+
+
+</body>
+</html>
