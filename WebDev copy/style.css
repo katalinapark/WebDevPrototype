@@ -1,0 +1,46 @@
+ul{
+	list-style-type: none;
+	float: left;
+	
+}
+
+li{
+	margin: 5px; 
+}
+
+img{
+	border: 1px solid #000;
+	width: 30px; 
+	height: 30px;
+}
+
+table {
+  overflow-x:auto;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+
+
+@media(max-width:768px ){
+
+#myTable td 
+{
+position: relative;
+padding-left: 40%
+
+}
+
+#tbody{
+	overflow-x:auto;
+}
+
+
+#body 
+{
+	padding: 0; 
+	margin: 0; 
+	width: 320 px;	
+	display: block; 

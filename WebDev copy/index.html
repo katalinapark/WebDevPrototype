@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styleZx  .css">
+
+
+<style>
+.button{
+	background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4x 2px;
+    -webkit-transition-duration: 0.4s;
+
+}
+.buttton1{
+	background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button1:hover{
+
+    background-color: #008CBA;
+    color: white;
+}
+table {
+
+    border-collapse: collapse;
+    margin: 100px;
+    width: 100%;
+    border: 1px solid #ddd;
+
+}
+#div1 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+#div2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+</style>
+<script>
+
+
+
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("key", ev.target.id);
+
+}
+
+function drop(ev) {
+   ev.preventDefault();
+    var data = ev.dataTransfer.getData("key");
+    ev.target.appendChild(document.getElementById(data));
+   
+}
+
+ var row = new Number(window.prompt('Enter a number'));
+
+
+            createTable();
+
+            function createTable(){
+
+                var str='';
+
+                for(i=1; i <= row; i++){
+
+                    str = i +  '<br />';
+
+                    document.write(str);
+
+                }
+
+                  
+                 
+
+            }
+
+
+
+</script>
+</head>
+	<link rel = "stylesheet" type ="text/css" href ="style.css">
+<body>
+	<ul>
+		
+		<li><img src = "sprite.png" draggable ="true" ondragstart ="drag(event)" id = "drag1"></li>
+		<li><img src = "wall.jpeg" draggable ="true" ondragstart ="drag(event)" id = "drag2"></li>
+
+	</ul>
+
+
+<table id = "myTable" align= "center">
+<tr>
+<td> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+</td>
+</tr>
+<tr>
+<td> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 	
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+</td>
+</tr>
+<tr id = "clone">
+<td> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 		
+</td>
+</tr>
+<tr>
+<td> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 	 	
+</td>
+</tr>
+<tr>
+<td> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style ="overflow-x:auto;" ></div> 	
+</td>
+</tr>
+</table>
+<br> 
+
+
+<button class ="button button1" onclick="myFunction()">Delete Row</button>
+<button class ="button button1" onclick="myCreateFunction()"> Create Row</button>
+<button class ="button button1"  onclick="removeWall()">Remove Wall</button>
+<button class ="button button1"onclick="removeSprite()">Remove Sprite</button>
+
+
+
+<script>
+function removeWall() {
+	var x = document.getElementById("drag2"); 
+	x.remove(x.selectedIndex); 
+}
+function removeSprite() {
+	var x = document.getElementById("drag1"); 
+	x.remove(x.selectedIndex);
+}
+function myCreateFunction() {
+	var table =document.getElementById("myTable");
+	var row = document.getElementById("clone");
+	var clone = row.cloneNode(true); 
+	clone.id = "newID"; 
+	table.appendChild(clone); 
+
+}
+function createRow() {
+	var row = document.createElement('tr'); 
+	var col = document.createElement('td'); 
+	var col2 = document.createElement('td'); 
+	  row.appendChild(col); 
+      row.appendChild(col2); 
+      col.innerHTML = "qwe"; 
+      col2.innerHTML = "rty"; 
+      var table = document.getElementById("clone"); 
+
+}
+function myFunction() {
+    document.getElementById("myTable").deleteRow(0);
+}
+</script>
+
+</body>
+</html>
