@@ -1,46 +1,101 @@
-ul{
+body {
+
+	padding: 0; 
+	margin: 100px 400px; 
+    table-layout: fixed;
+}
+
+body table {
+	border: 1px solid black;
+	float: center;
+	margin: 50px 78px;
+	border-collapse:collapse;
+	width: 100%;
+
+}
+
+
+
+ul li {
 	list-style-type: none;
-	float: left;
-	
+	margin: 0px -40px;	
+    table-layout: fixed;
+
 }
 
-li{
-	margin: 5px; 
-}
 
-img{
+
+img { 
 	border: 1px solid #000;
 	width: 30px; 
 	height: 30px;
-}
-
-table {
-  overflow-x:auto;
-  width: 50%;
-  height: 50%;
-  border: 1px solid black;
-  margin-top: 50px;
-}
-
-
-
-@media(max-width:768px ){
-
-#myTable td 
-{
-position: relative;
-padding-left: 40%
+	float: left;
+	margin: 2px;
 
 }
 
-#tbody{
-	overflow-x:auto;
+
+
+input{
+background-color: #DCDCDC;
+border: 1px solid black;
+width: 25px;
+height: 20px;
+float: left;
+margin: 2px;
+}
+
+input:hover{
+     background-color: #008CBA;
+    color: white;
+}
+
+.button{
+    float: left;
+	background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 6px;
+    margin: 2px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+   -webkit-transition-duration: 0.4s;
+
+}
+
+.button1:hover{
+
+    background-color: #008CBA;
+    color: white;
+}
+
+#div1 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+#div2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 
-#body 
-{
-	padding: 0; 
-	margin: 0; 
-	width: 320 px;	
-	display: block; 
+
+@media only screen and (min-width: 150px) and (max-width:600){
+
+  .button, .body {
+    width:100%;
+  }
+}
+
+
+
